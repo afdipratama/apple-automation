@@ -1,13 +1,10 @@
 const puppeteer = require('puppeteer-extra');
 const fetch = require('node-fetch');
-const request = require('request');
-const axios = require('axios');
-const { convert } = require('html-to-text');
+const chromePaths = require('chrome-paths');
 const cheerio = require('cheerio');
 const fs = require('fs');
 const AdblockerPlugin = require('puppeteer-extra-plugin-adblocker');
 const StealthPlugin = require('puppeteer-extra-plugin-stealth');
-var readlineSync = require('readline-sync');
 
 const sleep = ms => new Promise(res => setTimeout(res, ms));
 const password = "Anjing404!";
@@ -54,6 +51,7 @@ const lastInfo = randlast();
 (async () => {
     const browser = await puppeteer.launch({
         headless: false,
+	executablePath: chromePaths.chrome,
         args: [
             '--no-sandbox',
             '--disable-notifications'
