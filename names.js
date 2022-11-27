@@ -1,0 +1,135 @@
+var names = [
+	"RethaStracke",
+	"MrbigaleGulgowski",
+	"SalvatoreMohr",
+	"PamelaVonRueden",
+	"JaniyaWalker",
+	"KayceeConner",
+	"TristonLeannon",
+	"RodgeVeum",
+	"RhodaOrn",
+	"Ashtynerhold",
+	"HarleyCartwright",
+	"Anitamitham",
+	"NicolettePfeffer",
+	"CandelarioSchultz",
+	"ZeldaBashirian",
+	"JeanneOConnell",
+	"AliyahBoyle",
+	"KalebCrooks",
+	"Marcelinoieme",
+	"Forestones",
+	"KeithSanford",
+	"KathleenWillmsV",
+	"AlexZiemann",
+	"ChelseyCristDDS",
+	"Briellechuppe",
+	"ChristopheSimonis",
+	"Sabrinaehner",
+	"WilfordGibsoIV",
+	"HeidNicolas",
+	"Zoieitting",
+	"KyraKub",
+	"Nilson",
+	"KianZemlak",
+	"HopeHayes",
+	"EltaPfannerstill",
+	"LillyPagac",
+	"ConstantinRobelMD",
+	"HayleyGislason",
+	"JeanieMcClure",
+	"GilbertBradtkePhD",
+	"Reynoldtrosin",
+	"Trudieunde",
+	"PatriciaTromp",
+	"Adanollins",
+	"KelsieGusikowski",
+	"Tierrahoen",
+	"ValerieEmmerichI",
+	"DomenicaBogisich",
+	"MrsKennediMurazik",
+	"Marilyneuecker",
+	"Rosemaryertzmann",
+	"JarodMurazik",
+	"JaidenDibbert",
+	"DonWeissnat",
+	"Jimmyanecki",
+	"WileyAuer",
+	"AudreyMedhurst",
+	"NataliaReinger",
+	"ArloHudson",
+	"VirgilMullerSr.",
+	"Pariseaney",
+	"EthelynDare",
+	"FrederickSchmeler",
+	"AbdulFarrell",
+	"Ms.BennieStoltenberg",
+	"DenaGrant",
+	"GavinRogahn",
+	"PearlRoweIII",
+	"Haileeaumbach",
+	"MsailieOberbrunner",
+	"WilmerCarter",
+	"IlianaPowlowski",
+	"PrincessGuªann",
+	"Lysanneshlerin",
+	"MrKadenHackett",
+	"TrentnHarber",
+	"DamonTurner",
+	"FelipaFahey",
+	"DerrickBrown",
+	"LuluGerlach",
+	"NoeliaCronin",
+	"MichaelLegros",
+	"KatelinWaters",
+	"Hesteenesik",
+	"LoraineMorissette",
+	"FeliciaShanahan",
+	"EfrainBernier",
+	"JanieBartoletti",
+	"LeannWaelchi",
+	"MalindaLittelDDS",
+	"YolandaStrosin",
+	"KrisGusikowski",
+	"LizaJohns",
+	"Jayne",
+	"Oswaldo",
+	"Luella",
+	"Rylee",
+	"Cassandra",
+	"Davion",
+	"Eliza "
+];
+
+const lastname = ["Samantha",
+					"Purdy",
+					"Stracke",
+					"MarvinDVM",
+					"Langosh",
+					"Schroeder",
+					"Tremblay",
+					"Lueilwitz",];
+
+const random = () => {
+  const randomIndex = Math.floor(Math.random() * Math.floor(names.length));
+  return names[randomIndex];
+};
+
+const randlast = () => { 
+	const randomType = Math.floor(Math.random() * Math.floor(lastname.length));
+	return lastname[randomType];
+};
+
+const oll = () => {
+	return lastname;
+}
+const all = () => {
+  return names;
+};
+
+module.exports = {
+  randlast,
+  oll,
+  random,
+  all
+};
